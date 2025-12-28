@@ -13,6 +13,7 @@ require "rspec/rails"
 
 require_relative "support/assets"
 require_relative "support/capybara"
+require_relative "support/factory_bot"
 require_relative "support/matchers"
 require_relative "support/mocks"
 require_relative "support/shoulda_matchers"

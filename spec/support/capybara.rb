@@ -7,10 +7,10 @@ require_relative "capybara/rack_test"
 Capybara.server = :puma, { Silent: true }
 Capybara.save_path = ENV.fetch("CIRCLE_ARTIFACTS", Capybara.save_path)
 
-driver = ENV.fetch("DRIVER", :selenium).to_sym
+driver = ENV.fetch("DRIVER", :firefox).to_sym
 
 RSpec.configure do |config|
   config.before(:each, type: :system) do
-    driven_by(driver)
+    driven_by(:selenium, using: driver)
   end
 end

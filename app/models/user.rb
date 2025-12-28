@@ -1,9 +1,13 @@
 # frozen_string_literal: true
 
 class User < ApplicationRecord
+  EMAIL_REGEXP = URI::MailTo::EMAIL_REGEXP.freeze
+
   has_secure_password
 
-  validates :email, presence: true, format: URI::MailTo::EMAIL_REGEXP
+  normalizes :email, with: ->(email) { email.to_s.strip.downcase }
+
+  validates :email, presence: true, format: EMAIL_REGEXP, uniqueness: true
 
   def self.find_by(args)
     super || NullUser.new

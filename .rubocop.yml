@@ -60,6 +60,7 @@ Style/MethodCallWithArgsParentheses:
     - it
     - layout
     - load
+    - normalizes
     - not_to
     - p
     - puts

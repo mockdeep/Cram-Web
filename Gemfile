@@ -18,7 +18,8 @@ gem "puma", "~> 7.0"
 gem "strong_migrations"
 
 group :development, :test do
-  gem "bundler-audit"
+  gem "bundler-audit", require: false
+  gem "factory_bot_rails", require: false
   gem "rspec-rails"
 end
 
