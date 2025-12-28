@@ -5,7 +5,7 @@ group :everything, halt_on_fail: true do
     all_after_pass: false,
     all_on_start: false,
     failed_mode: :keep,
-    cmd: "bundle exec spring rspec",
+    cmd: "rspec",
   }
 
   guard :rspec, rspec_options do
