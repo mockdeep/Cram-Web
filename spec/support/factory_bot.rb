@@ -7,8 +7,13 @@ module FactoryCache
     @user ||= FactoryBot.create(:user)
   end
 
+  def self.deck
+    @deck ||= FactoryBot.create(:deck)
+  end
+
   def self.reset
     @user = nil
+    @deck = nil
   end
 end
 
@@ -24,6 +29,10 @@ end
 module FactoryBot
   module Syntax
     module Methods
+      def default_deck
+        FactoryCache.deck
+      end
+
       def default_user
         FactoryCache.user
       end
