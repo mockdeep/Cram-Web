@@ -3,7 +3,7 @@
 class Card < ApplicationRecord
   belongs_to :deck
 
-  STATUSES = ["pending", "active"].freeze
+  STATUSES = ["pending", "active", "done"].freeze
 
   validates :deck_id, presence: true
   validates :status, inclusion: { in: STATUSES }
@@ -14,5 +14,7 @@ class Card < ApplicationRecord
   validates :correct_streak, presence: true
   validates :view_count, presence: true
 
+  scope :active, -> { where(status: "active") }
+  scope :pending, -> { where(status: "pending") }
   scope :ordered, -> { order(:id) }
 end
