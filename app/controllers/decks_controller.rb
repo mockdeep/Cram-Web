@@ -5,6 +5,12 @@ class DecksController < ApplicationController
     render(Views::Decks::Index.new(decks: current_user.decks))
   end
 
+  def show
+    deck = current_user.decks.find(params[:id])
+
+    render(Views::Decks::Show.new(deck:))
+  end
+
   def new
     render(Views::Decks::New.new(deck: Deck.new))
   end

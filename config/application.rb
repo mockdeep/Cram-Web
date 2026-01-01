@@ -31,6 +31,7 @@ module Cram
     extra_paths = [
       Rails.root.join("app/actions"),
       Rails.root.join("app/nulls"),
+      Rails.root.join("app/value_objects"),
       Rails.root.join("lib/route_constraints"),
     ]
     config.autoload_paths += extra_paths

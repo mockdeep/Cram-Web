@@ -13,4 +13,6 @@ class Card < ApplicationRecord
   validates :correct_count, presence: true
   validates :correct_streak, presence: true
   validates :view_count, presence: true
+
+  scope :ordered, -> { order(:id) }
 end

@@ -7,6 +7,7 @@ module Components
     include Phlex::Rails::Helpers::Routes
     include Phlex::Rails::Helpers::Pluralize
     include Phlex::Rails::Helpers::LinkTo
+    include Phlex::Rails::Helpers::TurboFrameTag
 
     register_value_helper :current_user
   end
