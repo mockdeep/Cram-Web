@@ -76,6 +76,7 @@ Style/MethodCallWithArgsParentheses:
     - require
     - require_relative
     - ruby
+    - scope
     - source
     - store_accessor
     - to
@@ -109,6 +110,7 @@ Style/WordArray: { EnforcedStyle: brackets }
 
 Bundler/GemComment: { Enabled: false }
 Lint/ConstantResolution: { Enabled: false }
+Rails/OrderById: { Enabled: false }
 Rails/RedundantPresenceValidationOnBelongsTo: { Enabled: false }
 Rails/SchemaComment: { Enabled: false }
 RSpec/AlignLeftLetBrace: { Enabled: false }
