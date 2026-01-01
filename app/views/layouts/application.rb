@@ -26,8 +26,8 @@ module Views
           body do
             if current_user.logged_in?
               plain(current_user.email)
-              link_to("Account", account_path(current_user))
-              link_to("Log Out", session_path, method: :delete)
+              link_to("Account", account_path)
+              button_to("Log Out", session_path, method: :delete)
             else
               link_to("Log In", new_session_path)
               link_to("Sign Up", new_account_path)

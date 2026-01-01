@@ -39,9 +39,9 @@ RSpec.describe "user sessions" do
 
     sign_in_with(email: user.email, password: user.password)
 
-    click_link("Log Out")
+    click_button("Log Out")
 
-    # expect(page).to have_link("Log In")
+    expect(page).to have_link("Log In")
     expect(page).to have_no_text(user.email)
   end
 end
