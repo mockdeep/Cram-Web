@@ -15,7 +15,7 @@ module Views
 
         html do
           head do
-            title { "YourAppNameHere" }
+            title { "Cram" }
             csrf_meta_tags
             csp_meta_tag
 
