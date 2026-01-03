@@ -8,12 +8,12 @@ default: &default
 
 development:
   <<: *default
-  database: cram_development
+  database: flash_development
 
 test:
   <<: *default
-  database: cram_test
+  database: flash_test
 
 production:
   <<: *default
-  database: cram_production
+  database: flash_production

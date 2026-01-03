@@ -4,7 +4,7 @@ module Views
   module Sessions
     class New < Views::Base
       def view_template
-        h1 { "Log in to Cram" }
+        h1 { "Log in to Flash" }
         form_with(scope: :session, url: session_path) do |form|
           div(class: "field") do
             form.label(:email)

@@ -15,7 +15,7 @@ module Views
 
         html do
           head do
-            title { "Cram" }
+            title { "Flash" }
             csrf_meta_tags
             csp_meta_tag
 
