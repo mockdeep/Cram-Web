@@ -7,4 +7,6 @@
 import {application} from "./application";
 
 import DialogController from "./dialog_controller";
+import HotkeysController from "./hotkeys_controller";
 application.register("dialog", DialogController);
+application.register("hotkeys", HotkeysController);

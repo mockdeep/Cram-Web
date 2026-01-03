@@ -23,7 +23,8 @@ module Views
             p { "Incorrect. The correct answer was: #{result.correct_answer}" }
           end
 
-          link_to("Next Card", deck_study_path(deck))
+          data = { hotkeys_target: "click", hotkey: " " }
+          link_to("Next Card", deck_study_path(deck), data:)
         end
       end
     end
