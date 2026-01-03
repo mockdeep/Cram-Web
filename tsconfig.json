@@ -7,7 +7,8 @@
     "moduleResolution": "bundler",
     "paths": {
       "channels/*": ["./app/javascript/channels/*"],
-      "controllers/*": ["./app/javascript/controllers/*"]
+      "controllers/*": ["./app/javascript/controllers/*"],
+      "javascript/*": ["./app/javascript/*"]
     },
     "noUncheckedSideEffectImports": true,
     "sourceMap": true,
@@ -22,8 +23,7 @@
     "exactOptionalPropertyTypes": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedIndexedAccess": true,
-    "noPropertyAccessFromIndexSignature": true
+    "noUncheckedIndexedAccess": true
   },
   "exclude": ["app/assets/builds", "coverage", "node_modules", "public", "vendor"]
 }

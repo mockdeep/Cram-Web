@@ -13,6 +13,7 @@
   "moduleFileExtensions": ["js", "jsx", "ts", "tsx"],
   "modulePaths": [
     "<rootDir>",
+    "<rootDir>/app",
     "<rootDir>/app/javascript/",
     "<rootDir>/spec/javascript/"
   ],

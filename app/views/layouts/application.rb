@@ -23,7 +23,8 @@ module Views
             javascript_include_tag("application")
           end
 
-          body do
+          action = "keydown@document->hotkeys#handleKeydown"
+          body(data: { controller: "hotkeys", action: }) do
             if current_user.logged_in?
               plain(current_user.email)
               link_to("Account", account_path)

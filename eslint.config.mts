@@ -49,23 +49,34 @@ export default defineConfig([
       "@stylistic/comma-dangle": ["error", "always-multiline"],
       "@stylistic/function-call-argument-newline": ["error", "consistent"],
       "@stylistic/indent": ["error", 2],
-      "@stylistic/object-property-newline": ["error", {allowAllPropertiesOnSameLine: true}],
+      "@stylistic/max-len": ["error", 80, {ignoreUrls: true}],
+      "@stylistic/object-property-newline":
+        ["error", {allowAllPropertiesOnSameLine: true}],
       "@stylistic/padded-blocks": ["error", "never"],
       "@stylistic/quote-props": ["error", "as-needed", {keywords: true}],
-      "@stylistic/space-before-function-paren": ["error", {anonymous: "always", named: "never"}],
+      "@stylistic/space-before-function-paren":
+        ["error", {anonymous: "always", named: "never"}],
+      "@typescript-eslint/consistent-indexed-object-style":
+        ["error", "index-signature"],
       "@typescript-eslint/explicit-member-accessibility": "off",
       "@typescript-eslint/naming-convention": "off",
       "@typescript-eslint/no-magic-numbers": "off",
       "@typescript-eslint/prefer-readonly-parameter-types": "off",
+      "arrow-body-style": ["error", "always"],
       "func-style": ["error", "declaration"],
       "jest/consistent-test-it": ["error", {fn: "it", withinDescribe: "it"}],
       "jest/prefer-expect-assertions": "off",
       "jest/require-top-level-describe": "off",
+      "max-len": ["error", 84, {ignoreUrls: true}],
       "no-duplicate-imports": ["error", {allowSeparateTypeImports: true}],
       "no-magic-numbers": "off",
-      "sort-imports": ["error", {ignoreCase: true, ignoreDeclarationSort: true}],
+      "no-undefined": "off",
+      "one-var": ["error", "never"],
+      "sort-imports":
+        ["error", {ignoreCase: true, ignoreDeclarationSort: true}],
       "sort-keys": ["error", "asc", {caseSensitive: false, natural: true}],
-      "sort-keys-fix/sort-keys-fix": ["error", "asc", {caseSensitive: false, natural: true}],
+      "sort-keys-fix/sort-keys-fix":
+        ["error", "asc", {caseSensitive: false, natural: true}],
     },
     settings: {
       "import/resolver": {
