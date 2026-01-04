@@ -6,7 +6,7 @@ module Views
       attr_accessor :deck
 
       def initialize(deck:)
-        super
+        super()
         self.deck = deck
       end
 
